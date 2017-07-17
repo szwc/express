@@ -10,8 +10,9 @@ app.get("/",function (req,res) {
 
 app.use(express.static("public"));
 app.use(express.static("views"));
+router(app);
 
-
+console.log(router);
 
 app.listen(3000,function () {
 	console.log("sever is running at port 3000");
